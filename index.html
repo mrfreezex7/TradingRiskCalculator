@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Risk Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Trading Risk Calculator</h2>
+
+        <div class="form-group row-group">
+            <label for="target-2">Risk</label>
+            <input type="number" name="risk" placeholder="Risk" id="risk" />
+        </div>
+        <div class="form-group row-group">
+            <label for="target-2">Entry Price</label>
+            <input type="number" name="entry-price" placeholder="Entry Price" id="entryPrice" />
+        </div>
+        <div class="form-group row-group">
+            <label for="target-2">SL Price</label>
+            <input type="number" name="sl-" placeholder="SL Price" id="slPrice" />
+        </div>
+        <div class="form-group row-group">
+            <label for="target-2">SL &#8377; Per Share</label>
+            <input type="number" name="" placeholder="SL &#8377; Per Share" id="slrsPerShare" disabled />
+        </div>
+        <div class="form-group row-group">
+            <label for="target-2">Total Shares To Trade (Qty)</label>
+            <input type="number" class="color-type1" name="" placeholder="Total Shares To Trade" id="slTotalShare"
+                disabled />
+        </div>
+        <div class="form-group row-group">
+            <label for="target-1">Target% 1:01</label>
+            <input type="number" class="color-type2" name="" placeholder="Risk Reward 1:01" id="riskTarget1" disabled />
+        </div>
+        <div class="form-group row-group">
+            <label for="target-2">Target% 1:02</label>
+            <input type="number" class="color-type2" name="" placeholder="Risk Reward 1:02" id="riskTarget2" disabled />
+        </div>
+
+        <button id="btn-reset" class="btn-submit" type="reset">Reset</button>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
